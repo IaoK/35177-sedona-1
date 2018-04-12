@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Екатерина Йао](https://up.htmlacademy.ru/adaptive/14/user/35177).
-* Наставник: `Неизвестно`.
+* Наставник: [Владимир Кашапов](https://up.htmlacademy.ru/adaptive/14/user/214503).
 
 ---
 
