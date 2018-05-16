@@ -2,167 +2,169 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="page">
-        <header class="header">
-            <!-- блок с всплывающей навигацией -->
-            <nav class="nav">
-                <ul class="nav__list menu">
-                    <li>
-                        <a class="menu__link" href="info.html">Главная</a>
-                    </li>
-                    <li>
-                        <a class="menu__link" href="news.html">Фото и видео</a>
-                    </li>
-                    <li>
-                        <a class="menu__link" href="map.html">Форкма отзыва</a>
-                    </li>
-                    <li>
-                        <a class="menu__link" href="hotels.html">Html academy</a>
-                    </li>
-                </ul>
-                <div class="nav__wrapper">
-                    <a class="nav__logo">
-                        <img src="img/logo.png" width="102" height="83" alt="Логотип Седона">
-                    </a>
-                    <button class="nav__toggle" type="button">Открыть меню</button>
-                </div>
-            </nav>
-            <!-- блок с всплывающей навигацией конец -->
-        </header>
-        <main>
-            <h1 class="visually-hidden">Седона</h1>
-            <!-- блок с баннером -->
-            <div class="banner-inner">
-                <p class="banner-inner__text banner-inner__text--sedona">
-                    <span class="visually-hidden">Sedona</span>
-                </p>
-            </div>
-            <!-- блок с баннером конец -->
-            <!-- блок с формой обратной связи -->
-            <section class="feedback">
-                <h2 class="feedback__caption">Оставьте свой отзыв</h2>
-                <p class="feedback__content">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-                <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-                    <div class="feedback__intro">
-                        <h3 class="feedback__caption">Представьтесь:</h3>
-                        <label for="name-field">Имя*:</label>
-                        <input class="feedback__name" type="text" name="name" id="name-field" value="" placeholder="Петр">
-                        <label for="surname-field">Фамилия*:</label>
-                        <input class="feedback__surname" type="text" name="surname" id="surname-field" value="" placeholder="Иванов">
-                        <label for="patronymic-field">Отчество:</label>
-                        <input class="feedback__patronymic" type="text" name="patronymic" id="patronymic-field" value="" placeholder="Александрович">
-                    </div>
-                    <div class="feedback__contacts">
-                        <h3 class="feedback__caption">Контактная информация:</h3>
-                        <label for="phone-number-field">Контактный телефон*:</label>
-                        <input class="feedback__phone-number" type="text" name="name" id="phone-number-field" value="" placeholder="Введите телефон">
-                        <label for="e-mail">Электронная почта*:</label>
-                        <input class="feedback__mail" type="text" name="surname" id="e-mail" value="" placeholder="Введите e-mail">
-                    </div>
-                    <div class="feedback__opinion">
-                        <fieldset>
-                            <legend class="feedback__caption">Ваше oбщее впечатление:</legend>
-                            <!-- +блок с радиобаттонами в блоке фидбэк -->
-                            <ul class="feedback__opinion-list opinion">
-                                <li class="opinion__item">
-                                    <input class="visually-hidden input-radio" type="radio" name="opinion" value="positive" id="positive-opinion" checked>
-                                    <label class="opinion__voice" for="positive-opinion">
-                                        Скорее положительное
-                                    </label>
-                                </li>
-                                <li class="opinion__item">
-                                    <input class="visually-hidden input-radio" type="radio" name="opinion" value="negative" id="negative-opinion">
-                                    <label class="opinion__voice" for="negative-opinion">
-                                        Скорее отрицательное
-                                    </label>
-                                </li>
-                                <li class="opinion__item">
-                                    <input class="visually-hidden input-radio" type="radio" name="opinion" value="unknown" id="unknown-opinion">
-                                    <label class="opinion__voice" for="unknown-opinion">
-                                        Затрудняюсь ответить
-                                    </label>
-                                </li>
-                            </ul>
-                            <!-- +блок с радиобаттонами в блоке фидбэк конец-->
-                        </fieldset>
-                    </div>
-                    <fieldset>
-                        <!-- +блок с посещёнными местами в блоке фидбэк-->
-                        <legend class="sightseeing">Посещенные достопримечательности:
-                        </legend>
-                        <ul class="sightseeing__list">
-                            <li class="sightseeing__item">
-                                <input class="visually-hidden input-checkbox" type="checkbox" name="sightseeing" id="sightseeing-devil-bridge" checked>
-                                <label class="sightseeing__voice" for="sightseeing-devil-bridge">
-                                    Мост Дьявола
-                                </label>
-                            </li>
-                            <li class="sightseeing__item">
-                                <input class="visually-hidden input-checkbox" type="checkbox" name="sightseeing" id="sightseeing-mountain" checked>
-                                <label class="sightseeing__voice" for="sightseeing-mountain">
-                                    Гора-Колокол
-                                </label>
-                            </li>
-                            <li class="sightseeing__item">
-                                <input class="visually-hidden input-checkbox" type="checkbox" name="sightseeing" id="sightseeing-park" checked>
-                                <label class="sightseeing__voice" for="sightseeing-park">
-                                    Слайд-парк
-                                </label>
-                            </li>
-                            <li class="sightseeing__item">
-                                <input class="visually-hidden input-checkbox" type="checkbox" name="sightseeing" id="sightseeing-rocks">
-                                <label class="sightseeing__voice" for="sightseeing-rocks">
-                                    Красные скалы
-                                </label>
-                            </li>
-                        </ul>
-                        <!-- +блок с посещёнными местами в блоке фидбэк конец-->
-                    </fieldset>
-                    <p class="feedback__for-comment">
-                        <label class="feedback__caption" for="message-field">Опишите свои эмоции:</label>
-                        <input class="feedback__comment" type="text" name="message" id="message-field" value="" placeholder="Опишите подробно все свои восторги">
-                    </p>
-                    <p class="feedback__for-comment">
-                        <input class="feedback__send" type="submit" value="Отправить отзыв">
-                    </p>
-                </form>
-                <!-- блок с формой обратной связи конец -->
-            </section>
-        </main>
-        <!-- блок футер -->
-        <footer class="main-footer">
-            <p class="main-footer__hashtag">
-                #visitsedona
-            </p>
-            <!-- блок с соц сетями в блоке футер -->
-            <div class="social">
-                <ul class="social__list">
-                    <li class="social__item">
-                        <a class="social__button-tw" href="#">Twitter</a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__button-fb" href="#">Facebook</a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__button-yt" href="#">YouTube</a>
-                    </li>
-                </ul>
-                <!-- блок с соц сетями конец -->
-            </div>
-            <div class="main-footer__wrapper">
-                <p class="main-footer__copyright">Разработано</p>
-                <a class="main-footer__button-academy" href="#">
-                </a>
-            </div>
-        </footer>
-        <!-- блок футер конец -->
-    </div>
+  <div class="page">
+    <header class="header">
+      <!-- блок с всплывающей навигацией -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+          </li>
+        </ul>
+        <div class="nav__wrapper">
+          <a class="nav__logo">
+            <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
+          </a>
+          <button class="nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+      </nav>
+      <!-- блок с всплывающей навигацией конец -->
+    </header>
+    <main>
+      <h1 class="visually-hidden">Седона</h1>
+      <!-- блок с баннером -->
+      <div class="banner-inner">
+        <p class="banner-inner__text banner-inner__text--sedona">
+          <span class="visually-hidden">Sedona</span>
+        </p>
+      </div>
+      <!-- блок с баннером конец -->
+      <!-- блок с формой обратной связи -->
+      <section class="feedback">
+        <h2 class="feedback__caption">Оставьте свой отзыв</h2>
+        <p class="feedback__content">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="feedback__intro">
+            <h3 class="feedback__caption">Представьтесь:</h3>
+            <label class="feedback__contacts-field" for="name-field">Имя*:</label>
+            <input class="feedback__name" type="text" name="name" id="name-field" value="" placeholder="Петр">
+            <label class="feedback__contacts-field" for="surname-field">Фамилия*:</label>
+            <input class="feedback__surname" type="text" name="surname" id="surname-field" value="" placeholder="Иванов">
+            <label class="feedback__contacts-field" for="patronymic-field">Отчество:</label>
+            <input class="feedback__patronymic" type="text" name="patronymic" id="patronymic-field" value="" placeholder="Александрович">
+          </div>
+          <div class="feedback__contacts">
+            <h3 class="feedback__caption">Контактная информация:</h3>
+            <label class="contacts-field" for="phone-number-field">Контактный телефон*:</label>
+            <input class="feedback__phone-number" type="text" name="name" id="phone-number-field" value="" placeholder="Введите телефон">
+            <label class="contacts-field" for="e-mail">Электронная почта*:</label>
+            <input class="feedback__mail" type="text" name="surname" id="e-mail" value="" placeholder="Введите e-mail">
+          </div>
+          <div class="feedback__opinion">
+            <fieldset>
+              <legend class="feedback__caption">Ваше oбщее впечатление:</legend>
+              <!-- +блок с радиобаттонами в блоке фидбэк -->
+              <ul class="feedback__opinion-list opinion">
+                <li class="opinion__item">
+                  <input class="visually-hidden input-radio" type="radio" name="opinion" value="positive" id="positive-opinion" checked>
+                  <label class="opinion__voice" for="positive-opinion">
+                    Скорее положительное
+                  </label>
+                </li>
+                <li class="opinion__item">
+                  <input class="visually-hidden input-radio" type="radio" name="opinion" value="negative" id="negative-opinion">
+                  <label class="opinion__voice" for="negative-opinion">
+                    Скорее отрицательное
+                  </label>
+                </li>
+                <li class="opinion__item">
+                  <input class="visually-hidden input-radio" type="radio" name="opinion" value="unknown" id="unknown-opinion">
+                  <label class="opinion__voice" for="unknown-opinion">
+                    Затрудняюсь ответить
+                  </label>
+                </li>
+              </ul>
+              <!-- +блок с радиобаттонами в блоке фидбэк конец-->
+            </fieldset>
+          </div>
+          <fieldset>
+            <!-- +блок с посещёнными местами в блоке фидбэк-->
+            <legend class="sightseeing">Посещенные достопримечательности:
+            </legend>
+            <ul class="sightseeing__list">
+              <li class="sightseeing__item">
+                <input class="visually-hidden input-checkbox" type="checkbox" name="sightseeing" id="sightseeing-devil-bridge" checked>
+                <label class="sightseeing__voice" for="sightseeing-devil-bridge">
+                  Мост Дьявола
+                </label>
+              </li>
+              <li class="sightseeing__item">
+                <input class="visually-hidden input-checkbox" type="checkbox" name="sightseeing" id="sightseeing-mountain" checked>
+                <label class="sightseeing__voice" for="sightseeing-mountain">
+                  Гора-Колокол
+                </label>
+              </li>
+              <li class="sightseeing__item">
+                <input class="visually-hidden input-checkbox" type="checkbox" name="sightseeing" id="sightseeing-park" checked>
+                <label class="sightseeing__voice" for="sightseeing-park">
+                  Слайд-парк
+                </label>
+              </li>
+              <li class="sightseeing__item">
+                <input class="visually-hidden input-checkbox" type="checkbox" name="sightseeing" id="sightseeing-rocks">
+                <label class="sightseeing__voice" for="sightseeing-rocks">
+                  Красные скалы
+                </label>
+              </li>
+            </ul>
+            <!-- +блок с посещёнными местами в блоке фидбэк конец-->
+          </fieldset>
+          <p class="feedback__for-comment">
+            <label class="feedback__caption" for="message-field">Опишите свои эмоции:</label>
+            <input class="feedback__comment" type="text" name="message" id="message-field" value="" placeholder="Опишите подробно все свои восторги">
+          </p>
+          <p class="feedback__for-comment">
+            <input class="feedback__send" type="submit" value="Отправить отзыв">
+          </p>
+        </form>
+        <!-- блок с формой обратной связи конец -->
+      </section>
+    </main>
+    <!-- блок футер -->
+    <footer class="main-footer">
+      <p class="main-footer__hashtag">
+        #visitsedona
+      </p>
+      <!-- блок с соц сетями в блоке футер -->
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__button-tw" href="#">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__button-fb" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__button-yt" href="#">YouTube</a>
+          </li>
+        </ul>
+        <!-- блок с соц сетями конец -->
+      </div>
+      <div class="main-footer__wrapper">
+        <p class="main-footer__copyright">Разработано</p>
+        <a class="main-footer__button-academy" href="#">
+        </a>
+      </div>
+    </footer>
+    <!-- блок футер конец -->
+  </div>
 </body>
 
 </html>
