@@ -12,25 +12,27 @@
     <header class="header">
       <!-- блок с всплывающей навигацией -->
       <nav class="nav">
-        <ul class="nav__list menu">
-          <li>
-            <a class="menu__link" href="info.html">Главная</a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Главная</a>
           </li>
-          <li>
-            <a class="menu__link" href="news.html">Фото и видео</a>
+          <li class="nav__item">
+            <a class="nav__link" href="photo.html">Фото и видео</a>
           </li>
-          <li>
-            <a class="menu__link" href="map.html">Форкма отзыва</a>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Форма отзыва</a>
           </li>
-          <li>
-            <a class="menu__link" href="hotels.html">Html academy</a>
+          <li class="nav__item">
+            <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
           </li>
         </ul>
         <div class="nav__wrapper">
           <a class="nav__logo">
-            <img src="img/logo.png" width="102" height="83" alt="Логотип Седона">
+            <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
           </a>
-          <button class="nav__toggle" type="button">Открыть меню</button>
+          <button class="nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
       </nav>
       <!-- блок с всплывающей навигацией конец -->
@@ -39,17 +41,8 @@
       <h1 class="visually-hidden">Седона</h1>
       <!-- блок с баннером -->
       <div class="banner">
-        <p class="banner__text banner__text--welcome">
-          <span class="visually-hidden">welcome</span>
-        </p>
-        <p class="banner__text banner__text--gorgeous">
-          <span class="visually-hidden">to the gorgeous</span>
-        </p>
-        <p class="banner__text banner__text--sedona">
-          <span class="visually-hidden">Sedona</span>
-        </p>
-        <p class="banner__text banner__text--because">
-          <span class="visually-hidden">Because the Grand Canyon sucks!</span>
+        <p class="banner__text">
+          <span class="visually-hidden">welcome to the gorgeous Sedona Because the Grand Canyon sucks!</span>
         </p>
       </div>
       <!-- блок с баннером конец -->
@@ -60,56 +53,59 @@
         <ul class="features__list">
           <!-- + блок для элемента списка с фото -->
           <li class="features__item features-item-ext">
-            <h3 class="features-item-ext__caption--blue">
-              Настоящий городок
-            </h3>
-            <p class="features-item-ext__number">№1</p>
-            <p class="features-item-ext__content">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <div class="features__item--color-blue">
+              <h3 class="features-item-ext__caption--blue">
+                Настоящий городок
+              </h3>
+              <p class="features-item-ext__number">№1</p>
+              <p class="features-item-ext__content">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <img class="features-item-ext__image" src="img/main-city-mobile@1x.jpg" alt="Фото города">
             <!--  блок для элемента списка с фото конец -->
             <!-- блок с приемуществами в блоке с особенностями -->
             <ul class="advantages">
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--icon-housing">
                 <h3 class="advantages__caption">Жилье</h3>
                 <p class="advantages__content">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                <img class="advantages__icon-housing" src="img/housing.svg" width="39" height="37" alt="Жилье">
               </li>
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--icon-meal">
                 <h3 class="advantages__caption">Еда</h3>
                 <p class="advantages__content">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                <img class="advantages__icon-meal" src="img/meal.svg" width="40" height="35" alt="Еда">
               </li>
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--icon-souvenirs">
                 <h3 class="advantages__caption">Сувениры</h3>
                 <p class="advantages__content">Не только китайского, но и местного производства!</p>
-                <img class="advantages__icon-souvenirs" src="img/souvenirs.svg" width="32" height="38" alt="Сувениры">
-              </li>
+                </li>
             </ul>
             <!-- блок с приемуществами конец -->
           </li>
           <!--  блок для элемента списка с фото -->
           <li class="features__item features-item-ext">
-            <h3 class="features-item-ext__caption--blue">
-              Там есть мост дьявола
-            </h3>
-            <p class="features-item-ext__number">№2</p>
-            <p class="features-item-ext__content">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <div class="features__item--color-blue">
+              <h3 class="features-item-ext__caption--blue">
+                Там есть мост дьявола
+              </h3>
+              <p class="features-item-ext__number">№2</p>
+              <p class="features-item-ext__content">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <img class="features-item-ext__image" src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола">
           </li>
           <!--  блок для элемента списка с фото конец -->
-          <li class="features__item">
+          <li class="features__item-norm">
             <h3 class="features__caption">
               Небольшая площадь
             </h3>
             <p class="features__number">№3</p>
             <p class="features__content">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="features__item">
+          <li class="features__item-norm">
             <h3 class="features__caption">
               Красивая дорога
             </h3>
             <p class="features__number">№4</p>
             <p class="features__content">Ехать в седону из лас-вегаса совсем не скучно!</p>
           </li>
-          <li class="features__item">
+          <li class="features__item-norm">
             <h3 class="features__caption">
               Мало туристов
             </h3>
@@ -129,11 +125,13 @@
         <button class="search-form__button">Найти гостиницу</button>
       </form>
       <!-- блок с поиском гостиниц конец-->
-    </main><!-- блок футер -->
+    </main>
+    <!-- блок футер -->
     <footer class="main-footer">
       <p class="main-footer__hashtag">
         #visitsedona
-      </p><!-- блок с соц сетями в блоке футер -->
+      </p>
+      <!-- блок с соц сетями в блоке футер -->
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
@@ -145,14 +143,17 @@
           <li class="social__item">
             <a class="social__button-yt" href="#">YouTube</a>
           </li>
-        </ul><!-- блок с соц сетями конец -->
+        </ul>
+        <!-- блок с соц сетями конец -->
       </div>
       <div class="main-footer__wrapper">
         <p class="main-footer__copyright">Разработано</p>
         <a class="main-footer__button-academy" href="#">
         </a>
       </div>
-    </footer><!-- блок футер конец -->
+    </footer>
+    <!-- блок футер конец -->
   </div>
 </body>
+
 </html>
