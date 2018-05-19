@@ -12,15 +12,14 @@
   src: url("./fonts/ptsansbold.woff2") format("woff2"), url("./fonts/ptsansbold.woff") format("woff");
 }
 
-.page{
-  font-family: "PT Sans", Tahoma, sans-serif;
+.page {
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-weight: normal;
   width: 320px;
   background-color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-size: 18px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
-

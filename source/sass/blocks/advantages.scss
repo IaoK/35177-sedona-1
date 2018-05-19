@@ -1,25 +1,29 @@
 .advantages {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
+
 .advantages__caption {
   font-size: 18px;
 }
+
 .advantages__content {
   font-size: 14px;
 }
+
 .advantages__item--icon-housing {
-  background-image: url(../img/icon-house.svg);
+  background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
-.advantages__item--icon-meal {
-  background-image: url(../img/icon-burger.svg);
-  background-repeat: no-repeat;
 
+.advantages__item--icon-meal {
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
 }
+
 .advantages__item--icon-souvenirs {
-  background-image: url(../img/icon-gift.svg);
+  background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }

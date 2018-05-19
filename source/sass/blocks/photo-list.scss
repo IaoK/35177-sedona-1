@@ -1,15 +1,18 @@
 .photo-list {
   list-style: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
+
 .photo-list__caption {
   font-size: 14px;
 }
+
 .photo-list__creator {
   font-size: 14px;
   text-transform: none;
 }
+
 .photo-list__likes {
   font-size: 14px;
   font-weight: bold;
